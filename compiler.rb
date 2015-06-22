@@ -3,35 +3,14 @@ require 'pry'
 require './lib/group.rb'
 require './lib/shapes.rb'
 require './lib/index.rb'
-require './lib/reader_writer.rb'
+require './lib/parser.rb'
 
-SHAPES = /path|circle/
 
-rw = ReaderWriter.new
+DIR = "./svg"
 
-@index = Index.new()
 
-# each file
-file = "svg/faces/slaxsus.svg"
-title = File.basename(file, ".*")
-contents = rw.read_to_array file
+@parser = Parser.new(DIR)
+@parser.parse
+@parser.export
 
-@group = Group.new(title)
-@index.add_group @group
 
-contents.each do |line|
-  next if line == "\n"
-  if line.match(SHAPES)
-    case line.match(SHAPES)[0]
-    when "path"
-      @shape = Path.new(line)
-    when "circle"
-      @shape = Circle.new(line)
-    else
-      @shape = Shape.new(line)
-    end
-    @group.add_shape(@shape)
-  end
-end
-
-@index.save(rw)

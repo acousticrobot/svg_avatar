@@ -1,19 +1,18 @@
 require 'json'
 
 class Index
-  attr_reader :faces, :groups
+  attr_reader :components
 
   def initialize()
-    @faces = []
-    @groups = []
+    @components = {} # "faces", "torsos", etc.
   end
 
-  def add_face(face)
-    @faces << face
+  def add_component(component)
+    @components[component] = []
   end
 
-  def add_group(group)
-    @groups << group
+  def add_group(group, component)
+    @components[component] << group
   end
 
   def save(writer)
@@ -21,9 +20,6 @@ class Index
   end
 
   def to_json(options = {})
-    JSON.pretty_generate({ "avatarGroups" => {
-      "faces" => @faces,
-      "groups" => @groups
-    }})
+    "var avatarGroups = #{JSON.pretty_generate(@components)}"
   end
 end
