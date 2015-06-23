@@ -32,7 +32,7 @@ end
 
 class Parser
   attr_reader :dir, :components, :reader_writer, :index
-  SHAPES = /path|circle/
+  SHAPES = /(path|circle|ellipse|polygon|rect)/
 
   def initialize(dir)
     @dir = dir
@@ -48,14 +48,21 @@ class Parser
     @group = Group.new(title)
     @index.add_group @group, component
 
+    puts "  now building #{title}..."
     contents.each do |line|
       next if line == "\n"
       if line.match(SHAPES)
-        case line.match(SHAPES)[0]
+        case line.match(SHAPES)[1]
         when "path"
           @shape = Path.new(line)
         when "circle"
           @shape = Circle.new(line)
+        when "ellipse"
+          @shape = Ellipse.new(line)
+        when "polygon"
+          @shape = Polygon.new(line)
+        when "rect"
+          @shape = Rect.new(line)
         else
           @shape = Shape.new(line)
         end
@@ -66,6 +73,7 @@ class Parser
 
   def parse
     components.each do |component|
+      puts "now working on #{component} files..."
       @index.add_component(component)
       component_dir = File.join(@dir,component)
       files = @reader_writer.read_files_to_array(component_dir)

@@ -16,7 +16,7 @@ class Index
   end
 
   def save(writer)
-    writer.write_to_file("index.js", self.to_json)
+    writer.write_to_file("js/defs.js", self.to_json)
   end
 
   def to_json(options = {})

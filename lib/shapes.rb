@@ -15,6 +15,8 @@ class Shape
         class_attr = "color-primary"
       when "#000000"
         class_attr = "color-dark"
+      else
+        class_attr = "color-primary"
       end
     else
        class_attr = "color-primary"
@@ -36,9 +38,7 @@ end
 # {"type":"path","attr":{"d":"M90.001,21c0,0-20.147,21-45,21C20.148,42,0,21,0,21s20.147-21,45-21C69.854,0,90.001,21,90.001,21z","class":"bright-color"}},
 #
 class Path < Shape
-  D = /d\=\"(.+)\"/
-
-  attr_accessor :d
+  D = /d\=\"([^\"]+)\"/
 
   def initialize(svg)
     super
@@ -47,13 +47,28 @@ class Path < Shape
   end
 end
 
+#<rect x="73" y="105" width="20" height="20"/>
+class Rect < Shape
+  X = /x\=\"([^\"]+)\"/
+  Y = /y\=\"([^\"]+)\"/
+  WIDTH = /width\=\"([^\"]+)\"/
+  HEIGHT = /height\=\"([^\"]+)\"/
+
+  def initialize(svg)
+    super
+    @type = "rect"
+    @attrs["x"] = svg.match(X)[1] if svg.match(X)
+    @attrs["y"] = svg.match(Y)[1] if svg.match(Y)
+    @attrs["width"] = svg.match(WIDTH)[1]
+    @attrs["height"] = svg.match(HEIGHT)[1]
+  end
+end
+
 # {"type":"circle","attr":{"cx":"45","cy":"21","r":"21"}}
 class Circle < Shape
-  CX = /cx\=\"([\d|\.]+)\"/
-  CY = /cy\=\"([\d|\.]+)\"/
-  R = /r\=\"([\d|\.]+)\"/
-
-  attr_accessor :d
+  CX = /cx\=\"([^\"]+)\"/
+  CY = /cy\=\"([^\"]+)\"/
+  R = /r\=\"([^\"]+)\"/
 
   def initialize(svg)
     super
@@ -63,3 +78,36 @@ class Circle < Shape
     @attrs["r"] = svg.match(R)[1]
   end
 end
+
+#<ellipse fill="#F2F2F2" cx="100" cy="117" rx="65" ry="59"/>
+class Ellipse < Shape
+  CX = /cx\=\"([^\"]+)\"/
+  CY = /cy\=\"([^\"]+)\"/
+  RX = /rx\=\"([^\"]+)\"/
+  RY = /ry\=\"([^\"]+)\"/
+
+  def initialize(svg)
+    super
+    @type = "ellipse"
+    @attrs["cx"] = svg.match(CX)[1]
+    @attrs["cy"] = svg.match(CY)[1]
+    @attrs["rx"] = svg.match(RX)[1]
+    @attrs["ry"] = svg.match(RY)[1]
+  end
+end
+
+class Polygon < Shape
+  POINTS = /points\=\"([^\"]+)\"/
+
+  attr_accessor :POINTS
+
+  def initialize(svg)
+    super
+    @type = "polygon"
+    @attrs["points"] = svg.match(POINTS)[1]
+  end
+end
+
+
+
+

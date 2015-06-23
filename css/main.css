@@ -1,5 +1,12 @@
 /* CONTROLLER */
 
+body {
+  background-color: #3D65D4;
+}
+
+svg {
+  background-color: #F4E8D6;
+}
 #controller {
 
 }
@@ -20,19 +27,19 @@
 .athens {
   fill: #aa4400;
 }
-.athens .bright-color {
+.athens .color-bright {
   fill: #6cdcfc;
 }
-.athens .dark-color {
+.athens .color-dark {
   fill: #1F1F1F;
 }
 
 .san-paulo {
   fill: #724614;
 }
-.san-paulo .bright-color {
+.san-paulo .color-bright {
   fill: #72C427;
 }
-.san-paulo .dark-color {
+.san-paulo .color-dark {
   fill: #313131;
 }
