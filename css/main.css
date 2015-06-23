@@ -1,14 +1,13 @@
 /* CONTROLLER */
-
-body {
-  background-color: #3D65D4;
-}
-
 svg {
   background-color: #F4E8D6;
 }
 #controller {
 
+}
+
+#crown-controller, #head-controller, #eye-controller, #mouth-controller {
+  clear: both;
 }
 
 .last, .next, .theme {
@@ -19,10 +18,7 @@ svg {
   margin: 3px;
 }
 
-
-
-
-/* COLOR THEMES */
+/* SVG COLOR THEMES */
 
 .athens {
   fill: #aa4400;
@@ -42,4 +38,24 @@ svg {
 }
 .san-paulo .color-dark {
   fill: #313131;
+}
+
+.miami {
+  fill: #00A9EB;
+}
+.miami .color-bright {
+  fill: #00FFD4;
+}
+.miami .color-dark {
+  fill: #47512A;
+}
+
+.phoenix {
+  fill: #847F77;
+}
+.phoenix .color-bright {
+  fill: #BC4500;
+}
+.phoenix .color-dark {
+  fill: #93221A;
 }
