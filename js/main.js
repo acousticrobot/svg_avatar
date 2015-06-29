@@ -88,55 +88,54 @@ function build () {
 build();
 
 // Wachers
-d3.select("#crown-controller .last").on("click", function() {
+d3.select("#crown-controller .last").on("click", function(){
   crown.lastGroup();
   build();
-})
-
-$("#crown-controller .theme").click(function(){
+});
+d3.select("#crown-controller .theme").on("click", function(){
   crown.nextTheme();
   build();
 });
-$("#crown-controller .next").click(function(){
+d3.select("#crown-controller .next").on("click", function(){
   crown.nextGroup();
   build();
 });
 
-$("#eye-controller .last").click(function(){
+d3.select("#eye-controller .last").on("click", function(){
   eyes.lastGroup();
   build();
 });
-$("#eye-controller .theme").click(function(){
+d3.select("#eye-controller .theme").on("click", function(){
   eyes.nextTheme();
   build();
 });
-$("#eye-controller .next").click(function(){
+d3.select("#eye-controller .next").on("click", function(){
   eyes.nextGroup();
   build();
 });
 
-$("#head-controller .last").click(function(){
+d3.select("#head-controller .last").on("click", function(){
   head.lastGroup();
   build();
 });
-$("#head-controller .theme").click(function(){
+d3.select("#head-controller .theme").on("click", function(){
   head.nextTheme();
   build();
 });
-$("#head-controller .next").click(function(){
+d3.select("#head-controller .next").on("click", function(){
   head.nextGroup();
   build();
 });
 
-$("#mouth-controller .last").click(function(){
+d3.select("#mouth-controller .last").on("click", function(){
   mouth.lastGroup();
   build();
 });
-$("#mouth-controller .theme").click(function(){
+d3.select("#mouth-controller .theme").on("click", function(){
   mouth.nextTheme();
   build();
 });
-$("#mouth-controller .next").click(function(){
+d3.select("#mouth-controller .next").on("click", function(){
   mouth.nextGroup();
   build();
 });
