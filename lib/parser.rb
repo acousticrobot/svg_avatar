@@ -17,7 +17,7 @@ class ReaderWriter
   end
 
   def read_files_to_array(dir)
-    Dir.entries(dir).select {|f| !File.directory? f}
+    Dir.entries(dir).select {|f| !File.directory?(f) && File.fnmatch('**.svg', f)}
   end
 
   def read_dirs_to_array(dir)

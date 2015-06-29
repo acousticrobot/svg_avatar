@@ -11,6 +11,7 @@ class Shape
       case svg.match(FILL)[1]
       when "#FFFFFF"
         class_attr = "color-bright"
+      when "#808080"
       when "#999999"
         class_attr = "color-primary"
       when "#000000"
@@ -19,7 +20,7 @@ class Shape
         class_attr = "color-primary"
       end
     else
-       class_attr = "color-primary"
+       class_attr = "color-dark"
     end
     @attrs = {"class" => class_attr}
     @type = "generic shape"

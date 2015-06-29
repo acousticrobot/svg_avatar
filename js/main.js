@@ -24,6 +24,13 @@ var Component = function(component){
       groupCounter ++;
     }
   }
+  var lastGroup = function() {
+    if (groupCounter <= 0 ) {
+      groupCounter = maxGroups;
+    } else {
+      groupCounter --;
+    }
+  }
   var nextTheme = function() {
     if (themeCounter >= maxThemes) {
       themeCounter = 0;
@@ -36,7 +43,8 @@ var Component = function(component){
     group: group,
     theme: theme,
     nextGroup: nextGroup,
-    nextTheme: nextTheme
+    nextTheme: nextTheme,
+    lastGroup: lastGroup
   }
 }
 
@@ -80,6 +88,11 @@ function build () {
 build();
 
 // Wachers
+d3.select("#crown-controller .last").on("click", function() {
+  crown.lastGroup();
+  build();
+})
+
 $("#crown-controller .theme").click(function(){
   crown.nextTheme();
   build();
@@ -89,6 +102,10 @@ $("#crown-controller .next").click(function(){
   build();
 });
 
+$("#eye-controller .last").click(function(){
+  eyes.lastGroup();
+  build();
+});
 $("#eye-controller .theme").click(function(){
   eyes.nextTheme();
   build();
@@ -98,6 +115,10 @@ $("#eye-controller .next").click(function(){
   build();
 });
 
+$("#head-controller .last").click(function(){
+  head.lastGroup();
+  build();
+});
 $("#head-controller .theme").click(function(){
   head.nextTheme();
   build();
@@ -107,6 +128,10 @@ $("#head-controller .next").click(function(){
   build();
 });
 
+$("#mouth-controller .last").click(function(){
+  mouth.lastGroup();
+  build();
+});
 $("#mouth-controller .theme").click(function(){
   mouth.nextTheme();
   build();
