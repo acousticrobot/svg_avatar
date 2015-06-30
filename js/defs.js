@@ -10,6 +10,12 @@ var avatarGroups = {
   ]
 },
     {
+  "title": "heidi",
+  "shapes": [
+    {"type":"path","attr":{"class":"color-primary","d":"M0,300c13.807,0,25-11.193,25-25h-0.005L25,275l0-175h150v175c0,13.807,11.193,25,25,25V100C200,44.771,155.229,0,100,0C44.883,0,0.185,44.592,0.004,99.667H0"}}
+  ]
+},
+    {
   "title": "invader",
   "shapes": [
     {"type":"polygon","attr":{"class":"color-primary","points":"0,0 30,0 30,40 60,40 60,10 90,10 90,70 70,70 70,100 100.397,100 100.397,150 70,150 70,120 40,120 40,90 10,90 10,60 0,60 "}},
@@ -55,6 +61,14 @@ var avatarGroups = {
     {"type":"circle","attr":{"class":"color-bright","cx":"64.944","cy":"77.248","r":"11.5"}},
     {"type":"path","attr":{"class":"color-bright","d":"M69,106.756C69,123.459,100,137,100,137s31-13.541,31-30.244c0-16.704-13.879-30.244-31-30.244S69,90.053,69,106.756z"}}
   ]
+},
+    {
+  "title": "sasha",
+  "shapes": [
+    {"type":"path","attr":{"class":"color-dark","d":"M0,300c13.807,0,25-11.193,25-25h-0.005L25,275l0-175l75,25l75-25v175c0,13.807,11.193,25,25,25V100C200,44.771,155.229,0,100,0C44.883,0,0.185,44.592,0.004,99.667H0"}},
+    {"type":"polygon","attr":{"class":"color-bright","points":"100,115 175,75 145,75 160,40 135,50 140,25 115,40 115,10 100,25 "}},
+    {"type":"polygon","attr":{"class":"color-primary","points":"100,115 25,75 55,75 40,40 65,50 60,25 85,40 85,10 100,25 "}}
+  ]
 }
   ],
   "eyes": [
@@ -82,21 +96,46 @@ var avatarGroups = {
   ]
 },
     {
+  "title": "io",
+  "shapes": [
+    {"type":"path","attr":{"class":"color-primary","d":"M185,50c0,19.33-15.67,35-35,35H50c-19.33,0-35-15.67-35-35l0,0c0-19.33,15.67-35,35-35h100C169.331,15,185,30.67,185,50L185,50z"}},
+    {"type":"circle","attr":{"class":"color-bright","cx":"50","cy":"50","r":"25"}},
+    {"type":"circle","attr":{"class":"color-bright","cx":"150","cy":"50","r":"25"}},
+    {"type":"circle","attr":{"class":"color-dark","cx":"50","cy":"50","r":"15"}},
+    {"type":"circle","attr":{"class":"color-dark","cx":"150","cy":"50","r":"15"}}
+  ]
+},
+    {
   "title": "min",
   "shapes": [
-    {"type":"circle","attr":{"class":"color-dark","cx":"40","cy":"50","r":"13"}},
-    {"type":"circle","attr":{"class":"color-dark","cx":"160","cy":"50","r":"13"}}
+    {"type":"circle","attr":{"class":"color-dark","cx":"40","cy":"50","r":"15"}},
+    {"type":"circle","attr":{"class":"color-dark","cx":"160","cy":"50","r":"15"}}
+  ]
+},
+    {
+  "title": "sasha",
+  "shapes": [
+    {"type":"path","attr":{"class":"color-dark","d":"M35,25c0,0,8.011,3.928,15,5c3.615,0.554,9.515-0.347,13.725,0.964C68.499,32.451,75.643,45,75.643,45S50,50,45,45S35,25,35,25z"}},
+    {"type":"circle","attr":{"class":"color-primary","cx":"60","cy":"50","r":"15"}},
+    {"type":"circle","attr":{"class":"color-bright","cx":"60","cy":"50","r":"12.417"}},
+    {"type":"circle","attr":{"class":"color-dark","cx":"60","cy":"50","r":"9.565"}},
+    {"type":"path","attr":{"class":"color-bright","d":"M60,50l7.449-3.654c-1.073-2.181-3.069-3.819-5.483-4.406L60,50z"}},
+    {"type":"path","attr":{"class":"color-dark","d":"M165.319,25c0,0-8.011,3.928-15,5c-3.615,0.554-9.515-0.347-13.725,0.964C131.821,32.451,124.677,45,124.677,45s25.643,5,30.643,0S165.319,25,165.319,25z"}},
+    {"type":"circle","attr":{"class":"color-primary","cx":"140.319","cy":"50","r":"15"}},
+    {"type":"circle","attr":{"class":"color-bright","cx":"140.319","cy":"50","r":"12.417"}},
+    {"type":"circle","attr":{"class":"color-dark","cx":"140.319","cy":"50","r":"9.565"}},
+    {"type":"path","attr":{"class":"color-bright","d":"M140,50l7.449-3.654c-1.073-2.181-3.069-3.819-5.483-4.406L140,50z"}}
   ]
 },
     {
   "title": "zeitgeyes",
   "shapes": [
-    {"type":"path","attr":{"class":"color-primary","d":"M1,20l82,2L3,78h76L1,20z"}},
-    {"type":"path","attr":{"class":"color-primary","d":"M128,26l72-2l-74,56h66L128,26z"}},
-    {"type":"circle","attr":{"class":"color-bright","cx":"41","cy":"34","r":"12"}},
-    {"type":"circle","attr":{"class":"color-dark","cx":"41","cy":"34","r":"6"}},
-    {"type":"circle","attr":{"class":"color-bright","cx":"161","cy":"38","r":"12"}},
-    {"type":"circle","attr":{"class":"color-dark","cx":"161","cy":"38","r":"6"}}
+    {"type":"polygon","attr":{"class":"color-primary","points":"0,25 80,25 15,100 75,100 "}},
+    {"type":"polygon","attr":{"class":"color-primary","points":"120,25 200,25 125,100 185,100 "}},
+    {"type":"circle","attr":{"class":"color-bright","cx":"42","cy":"42","r":"17"}},
+    {"type":"circle","attr":{"class":"color-bright","cx":"158","cy":"42","r":"17"}},
+    {"type":"circle","attr":{"class":"color-dark","cx":"42","cy":"42","r":"10"}},
+    {"type":"circle","attr":{"class":"color-dark","cx":"158","cy":"42","r":"10"}}
   ]
 }
   ],
@@ -104,9 +143,9 @@ var avatarGroups = {
     {
   "title": "invader",
   "shapes": [
-    {"type":"rect","attr":{"class":"color-primary","x":"24","y":"31","width":"152","height":"138"}},
-    {"type":"rect","attr":{"class":"color-primary","width":"200","height":"116.125"}},
-    {"type":"rect","attr":{"class":"color-bright","x":"57","y":"68","width":"86","height":"132"}}
+    {"type":"rect","attr":{"class":"color-dark","x":"0","y":"0","width":"200","height":"100"}},
+    {"type":"rect","attr":{"class":"color-dark","x":"35","y":"100","width":"130","height":"75"}},
+    {"type":"rect","attr":{"class":"color-bright","x":"60","y":"65","width":"80","height":"135"}}
   ]
 },
     {

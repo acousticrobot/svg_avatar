@@ -1,6 +1,6 @@
 var svg = d3.select("#avatar").append("svg").attr("width", 200).attr("height", 300);
 
-var colorThemes = ["athens", "san-paulo", "miami", "phoenix"];
+var colorThemes = ["athens", "nocturn", "san-paulo", "miami", "phoenix"];
 
 // component = "eyes"
 var Component = function(component){
@@ -79,9 +79,9 @@ function assembleComponent(component,x,y) {
 function build () {
   svg.selectAll("g").remove();
   svg.append(assembleComponent(head,0,100));
-  svg.append(assembleComponent(crown,0,0));
   svg.append(assembleComponent(eyes,0,100));
   svg.append(assembleComponent(mouth,0,150));
+  svg.append(assembleComponent(crown,0,0));
 }
 
 // initial build

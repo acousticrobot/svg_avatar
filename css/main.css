@@ -1,6 +1,6 @@
 /* CONTROLLER */
 svg {
-  background-color: #F4E8D6;
+  background-color: #FFFFFF;
 }
 #controller {
 
@@ -28,6 +28,16 @@ svg {
 }
 .athens .color-dark {
   fill: #1F1F1F;
+}
+
+.nocturn {
+  fill: #0D1927;
+}
+.nocturn .color-bright {
+  fill: #89C234;
+}
+.nocturn .color-dark {
+  fill: #FFFACD;
 }
 
 .san-paulo {
