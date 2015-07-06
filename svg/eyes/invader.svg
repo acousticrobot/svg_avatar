@@ -3,7 +3,10 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="800px" height="600px" viewBox="0 0 800 600" enable-background="new 0 0 800 600" xml:space="preserve">
-<ellipse fill="#999999" cx="100" cy="100" rx="62.375" ry="100"/>
-<ellipse cx="100" cy="82.5" rx="100" ry="48.5"/>
-<ellipse fill="#FFFFFF" cx="100" cy="117" rx="65" ry="59"/>
+<rect x="20" y="20" fill="#999999" width="60" height="60"/>
+<rect x="120" y="20" fill="#999999" width="60" height="60"/>
+<rect x="28.875" y="30" fill="#FFFFFF" width="40" height="40"/>
+<rect x="130" y="30" fill="#FFFFFF" width="40" height="40"/>
+<rect x="40" y="40" width="20" height="20"/>
+<rect x="140" y="40" width="20" height="20"/>
 </svg>

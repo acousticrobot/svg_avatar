@@ -3,5 +3,5 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="800px" height="600px" viewBox="0 0 800 600" enable-background="new 0 0 800 600" xml:space="preserve">
-<circle fill="#999999" cx="100" cy="150" r="100"/>
+<path fill="#999999" d="M200,50c0-27.614-44.771-50-100-50S0,22.386,0,50c0,1.411,0,47.517,0,50c0,82.843,44.771,150,100,150s100-67.157,100-150l0,0V50L200,50z"/>
 </svg>

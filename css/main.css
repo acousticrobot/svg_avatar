@@ -37,7 +37,7 @@ svg {
   fill: #89C234;
 }
 .nocturn .color-dark {
-  fill: #FFFACD;
+  fill: #FFF490;
 }
 
 .san-paulo {
@@ -61,11 +61,41 @@ svg {
 }
 
 .phoenix {
-  fill: #847F77;
+  fill: #B7B0A5;
 }
 .phoenix .color-bright {
-  fill: #BC4500;
+  fill: #FFB444;
 }
 .phoenix .color-dark {
   fill: #93221A;
+}
+
+.ft_lauderdale {
+  fill: #CC767A;
+}
+.ft_lauderdale .color-bright {
+  fill: #F0CCB4;
+}
+.ft_lauderdale .color-dark {
+  fill: #66403B;
+}
+
+.vegas {
+  fill: #91CE74;
+}
+.vegas .color-bright {
+  fill: #C5FF6D;
+}
+.vegas .color-dark {
+  fill: #312E2E;
+}
+
+.gary {
+  fill: #C8C2B6;
+}
+.gary .color-bright {
+  fill: #E6DFD1;
+}
+.gary .color-dark {
+  fill: #000000;
 }
